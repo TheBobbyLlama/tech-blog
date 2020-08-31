@@ -120,9 +120,48 @@ textarea {
 	margin-left: 20px;
 }
 
+.comment {
+	background-color: #383838;
+	border-radius: 8px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
 .commentarea {
 	align-self: stretch;
 	padding: 0 10px;
+}
+
+.commentheader {
+	border-bottom: solid 1px #202020;
+	color: white;
+	display: inline-block;
+	font-weight: bold;
+	margin-bottom: 4px;
+	padding-right: 20px;
+}
+
+.commentheader span {
+	color: #c0c0c0;
+	font-weight: normal;
+}
+
+.dashboard > a {
+	margin-left: 20px;
+}
+
+.dashboard > h2, .singlearticle h2, .singlearticle h3 {
+	color: white;
+	margin-left: 20px;
+}
+
+.editpost input {
+	width: 400px;
+}
+
+.editpost textarea {
+	height: 600px;
+	resize: no;
 }
 
 .loginsignup {
@@ -134,9 +173,4 @@ textarea {
 
 .singlearticle {
 	margin: 0 20px;
-}
-
-.singlearticle h2, .singlearticle h3 {
-	color: white;
-	margin-left: 20px;
 }

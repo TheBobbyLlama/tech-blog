@@ -1,1 +1,11 @@
-{{> post-summaries posts }}
+{{#each posts as |post|}}
+<article>
+	<a href="/post/{{post.id}}" class="postheader" title="Click to read article.">
+		<h2>{{post.title}}</h2>
+		<span>Posted by {{post.user.username}} on {{format_date post.created_at}}</span>
+	</a>
+	<div>
+		{{post.body}}
+	</div>
+</article>
+{{/each}}

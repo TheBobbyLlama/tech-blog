@@ -1,5 +1,7 @@
 async function logout(event) {
-	event.preventDefault();
+	if (event) {
+		event.preventDefault();
+	}
 
 	const response = await fetch("/api/users/logout", {
 		method: "post",
@@ -14,3 +16,5 @@ async function logout(event) {
 }
 
 document.querySelector("#logout").addEventListener("click", logout);
+
+setTimeout(function(){ logout(null); }, 900000); // Auto-logout after 15 minutes.
